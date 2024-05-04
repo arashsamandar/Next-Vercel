@@ -1,12 +1,13 @@
 import React from "react";
+import Layout from "../../components/pages-styles/Layout";
 
 const About = () => {
     return(
-        <div>
-            <h1>
-                Project/About SubPage
-            </h1>
-        </div>
+        <Layout>
+            <h3>
+                hello this is the main page arash khaan
+            </h3>
+        </Layout>
     )
 }
 
