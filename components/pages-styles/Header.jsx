@@ -28,16 +28,16 @@ const Header = () => {
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="/login">
-              Login{" "}
+              Login
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="{{route('register')}}">
-              Register{" "}
+            <a class="nav-link" href="/register">
+              Register
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/link">
               Link
             </a>
           </li>
@@ -54,14 +54,14 @@ const Header = () => {
               Dropdown
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="/action">
                 Action
               </a>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="/another-action">
                 Another action
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="/something-else">
                 Something else here
               </a>
             </div>

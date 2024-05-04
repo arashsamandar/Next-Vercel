@@ -12,26 +12,26 @@ const Index = ({posts}) => {
       <input type='button' name='myButton' value="Hello Bootstrap Looks Good" className='btn btn-danger' />
     </div>
     <br></br>
-    <ul>
+    {/* <ul>
       {posts.map(post => (
           <li key={post.id}>
             <h5>{post.title}</h5>
             <p>{post.content}</p>
           </li>
       ))}
-    </ul>
+    </ul> */}
     </Layout>
   );
 };
 
 export default Index;
 
-export async function getStaticProps(){
-  const response = await fetch('http://localhost:3000/data/posts.json');
-  const posts = await response.json();
-  return {
-    props:{
-      posts,
-    }
-  }
-}
+// export async function getStaticProps(){
+//   const response = await fetch('http://localhost:3000/data/posts.json');
+//   const posts = await response.json();
+//   return {
+//     props:{
+//       posts,
+//     }
+//   }
+// }

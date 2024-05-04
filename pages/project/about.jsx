@@ -5,7 +5,7 @@ const About = () => {
     return(
         <Layout>
             <h3>
-                hello this is the main page arash khaan
+                hello this is the project/about page arash khaan
             </h3>
         </Layout>
     )
