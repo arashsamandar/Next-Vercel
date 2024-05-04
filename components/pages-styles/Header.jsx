@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style={{marginBottom:'50px'}}>
       <a class="navbar-brand" href="#">
         Navbar
       </a>
@@ -21,12 +22,12 @@ const Header = () => {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <Link class="nav-link" href="/">
               Home <span class="sr-only">(current)</span>
-            </a>
+            </Link>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="{{route('login')}}">
+            <a class="nav-link" href="/login">
               Login{" "}
             </a>
           </li>
@@ -66,9 +67,9 @@ const Header = () => {
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('forum')}}">
-              Forum
-            </a>
+            <Link class="nav-link" href="/project/about">
+              Project
+            </Link>
           </li>
         </ul>
       </div>

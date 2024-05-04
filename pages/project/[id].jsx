@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
+import Layout from "../../components/pages-styles/Layout";
 
 const Project = () => {
     const router = useRouter();
@@ -12,13 +13,13 @@ const Project = () => {
         });
     }
     return(
-        <React.Fragment>
+        <Layout>
             <div>
                 <h2>Project Page { router.query.id }</h2>
                 <h2>{count}</h2>
                 <input type="button" value="Increase" onClick={handleIncrement} name="Increase" />
             </div>
-        </React.Fragment>
+        </Layout>
     )
 }
 

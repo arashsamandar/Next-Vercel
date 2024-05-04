@@ -6,7 +6,9 @@ const Layout = ({children}) => {
     return(
         <main>
             <Header />
-                {children}
+                <div style={{textAlign:'center'}}>
+                    {children}
+                </div>
             <Footer />
         </main>
     )
